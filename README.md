@@ -1,2 +1,2 @@
 # NavbarBasic
-MERN STACK
+NavBar using HTML CSS
