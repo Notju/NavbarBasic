@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        header nav {
+            display: flex;
+    
+        }
+        header{
+            background-color: rgb(255, 202, 196);
+            height: 80px;
+            border: 5px solid black;
+            margin-bottom:5px ;
+            
+        }
+        header nav a{
+            text-decoration: none;
+            color: black;
+        }
+        header nav li{
+            list-style-type: none;
+            margin: 15px;
+            padding-left: 50px;
+            font-size: 20px;
+            padding-top: 10px;
+
+            font-family: 'Times New Roman', Times, serif;
+        }
+        section{
+            display: flex;
+        }
+        section nav{
+            width: 20%;
+           border: 5px solid black;
+            padding: 15px;
+            margin: 2px;
+        }
+        section nav h2{
+            padding:5px ;
+        }
+        section nav li{
+            list-style-type: none;
+            padding: 5px;
+            font-size: 18px;
+            
+        }
+        
+        section article{
+            width: 60%;
+            background-color: rgb(228, 228, 228);
+            padding: 15px;
+            border: 5px solid black;
+            margin: 2px;
+        }
+        section #img{
+           width: 20%;
+           margin: 2px;
+        }
+        img{
+            width: 100%;
+            padding: 5px 40px;
+            border-radius:50% ;
+        }
+        
+        footer{
+            height: 100px;
+            background-color: gray;
+            text-align: center;
+            border: 5px solid black;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><li>Home</li></a>
+            <a href="assignment.html"><li>Html Layout</li></a>
+            <a href="form.html"><li>Registration</li></a>
+            <a href=""><li>Contact</li></a>
+            <a href="gallery.html" ><li>Gallery</li></a>
+        </nav>
+    </header>
+    <section>
+        <nav>
+            <h2>Sports</h2>
+            <li id="cric">Cricket </li>
+    </nav>
+    <article>
+        <details>
+            <summary>About Cricket</summary>
+            <p>Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. Two players from the batting team (the striker and nonstriker) stand in front of either wicket, with one player from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the pitch. The striker's goal is to hit the bowled ball and then switch places with the nonstriker, with the batting team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of the field or when the ball is bowled illegally.</p>
+        </details>
+    </article>
+    <div id="img">
+        <img src="https://media.istockphoto.com/id/177427917/photo/close-up-of-red-cricket-ball-and-bat-sitting-on-grass.jpg?s=2048x2048&w=is&k=20&c=Zq0DS_ODjxvuyLUtMFgfeDOEqSF7XMt4XGNUUBWPHzE=" alt="cricket">
+    </div>
+    </section>
+    <section>
+        <div id="img">
+            <img src="https://cdn.pixabay.com/photo/2023/04/17/10/31/tennis-7932067_1280.jpg" alt="Tennis">
+        </div>
+    <article>
+        <details>
+            <summary>About Tennis</summary>
+            <p>Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court. The object of the game is to manoeuvre the ball in such a way that the opponent is not able to play a valid return. The player who is unable to return the ball validly will not gain a point, while the opposite player will.</p>
+        </details>
+    </article>
+    
+    <nav>
+        <h2>Sports</h2>
+        <li id="tenn">Tennis</li>
+</nav>
+    </section>
+    <section>
+        <nav>
+            <h2>Sports</h2>
+            <li id="foot">Football</li>
+    </nav>
+    <article>
+        <details>
+            <summary>About Football</summary>
+            <p>Association football, more commonly known as football or soccer,[a] is a team sport played between two teams of 11 players each, who primarily use their feet to propel a ball around a rectangular field called a pitch. The objective of the game is to score more goals than the opposing team by moving the ball beyond the goal line into a rectangular-framed goal defended by the opposing team. Traditionally, the game has been played over two 45-minute halves, for a total match time of 90 minutes. With an estimated 250 million players active in over 200 countries and territories, it is the world's most popular sport.</p>
+        </details>
+    </article>
+    <div id="img">
+        <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Football">
+    </div>
+    </section>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
