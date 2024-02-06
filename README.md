@@ -1,3 +1,2 @@
 # NavbarBasic
-NavBar using HTML CSS
-More Changes
+NavBar using HTML CSS More Changes
