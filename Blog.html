@@ -35,7 +35,6 @@
             padding-left: 50px;
             font-size: 20px;
             padding-top: 10px;
-
             font-family: 'Times New Roman', Times, serif;
         }
         section{
@@ -100,7 +99,7 @@
     </nav>
     <article class="a">
         <details>
-            <summary>About Cricket</summary>
+            <summary id="cc">About Cricket</summary>
             <p id="cricket">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. Two players from the batting team (the striker and nonstriker) stand in front of either wicket, with one player from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the pitch. The striker's goal is to hit the bowled ball and then switch places with the nonstriker, with the batting team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of the field or when the ball is bowled illegally.</p>
         </details>
     </article>
@@ -148,7 +147,11 @@
         var y=document.getElementsByTagName('article')
         for (var i = 0; i < y.length; i++) {
         y[i].style.backgroundColor="green"
+        y[i].style.border="5px solid blue"
     }
+       var z=document.getElementById("cc")
+       z.style.fontSize="30px"
+       z.style.fontFamily="Lucida Sans"
     </script>
 </body>
 </html>
