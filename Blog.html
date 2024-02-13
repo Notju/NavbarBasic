@@ -94,7 +94,7 @@
     </header>
     <section>
         <nav>
-            <h2>Sports</h2>
+            <h2 class="head">Sports</h2>
             <li id="cric">Cricket </li>
     </nav>
     <article class="a">
@@ -119,13 +119,13 @@
     </article>
     
     <nav>
-        <h2>Sports</h2>
+        <h2 class="head">Sports</h2>
         <li id="tenn">Tennis</li>
 </nav>
     </section>
     <section>
         <nav>
-            <h2>Sports</h2>
+            <h2 class="head">Sports</h2>
             <li id="foot">Football</li>
     </nav>
     <article class="a">
@@ -144,14 +144,25 @@
     <script>
         var x=document.getElementById('cricket')
         x.style.color="red"
-        var y=document.getElementsByTagName('article')
+        var y=document.getElementsByClassName('a')
         for (var i = 0; i < y.length; i++) {
         y[i].style.backgroundColor="green"
         y[i].style.border="5px solid blue"
     }
        var z=document.getElementById("cc")
        z.style.fontSize="30px"
-       z.style.fontFamily="Lucida Sans"
+       
+       var r=document.getElementsByClassName('head')
+       for(var i=0;i< r.length;i++){
+        r[i].style.fontStyle="italic";
+        if(i%2==0){
+            r[i].style.color="green"
+        }
+        else{
+            r[i].style.color="blue"
+        }
+       }
+
     </script>
 </body>
 </html>
