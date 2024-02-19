@@ -94,7 +94,7 @@
     </header>
     <section>
         <nav>
-            <h2 class="head">Sports</h2>
+            <h2 class="head">Sports is best</h2>
             <li id="cric">Cricket </li>
     </nav>
     <article class="a">
@@ -153,15 +153,25 @@
        z.style.fontSize="30px"
        
        var r=document.getElementsByClassName('head')
-       for(var i=0;i< r.length;i++){
+       for(let i=0;i< r.length;i++){
         r[i].style.fontStyle="italic";
-        if(i%2==0){
-            r[i].style.color="green"
-        }
-        else{
-            r[i].style.color="blue"
-        }
+        r[i].style.cursor="pointer"
+        // if(i%2==0){
+        //     r[i].style.color="green"
+        // }
+        // else{
+        //     r[i].style.color="blue"
+
+        // }
+        r[i].addEventListener("click",function(){
+            alert("pop up")
+            r[i].style.color="red"
+        
+       })
        }
+       
+
+       
 
     </script>
 </body>
